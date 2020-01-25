@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>your name</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      html {
+
+      }
+      *, *:before, *:after {
+
+      }
+      
+
+
+
+      /* Start your CSS on the next line! */
+
+      /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: LavenderBlush;
+        color: Plum;
+        font-style: Georgia;
+        font-size: 30px;
+      }
+
+      /* Style the back side */
+      .flip-card-back {
+        background-color: LavenderBlush;
+        color: Plum;
+        transform: rotateY(180deg);
+      }
+
+      .flip-cardone {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+
+      /* This container is needed to position the front and back side */
+      .flip-cardone-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-cardone:hover .flip-cardone-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* Position the front and back side */
+      .flip-cardone-front, .flip-cardone-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+
+      /* Style the front side (fallback if image is missing) */
+      .flip-cardone-front {
+        background-color: LavenderBlush;
+        color: Plum;
+        font-style: Georgia;
+        font-size: 30px;
+      }
+
+      /* Style the back side */
+      .flip-cardone-back {
+        background-color: LavenderBlush;
+        color: Plum;
+        transform: rotateY(180deg);
+      }
+
+      .flip-cardtwo {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+
+      /* This container is needed to position the front and back side */
+      .flip-cardtwo-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-cardtwo:hover .flip-cardtwo-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* Position the front and back side */
+      .flip-cardtwo-front, .flip-cardtwo-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+
+      /* Style the front side (fallback if image is missing) */
+      .flip-cardtwo-front {
+        background-color: LavenderBlush;
+        color: Plum;
+        font-style: Georgia;
+        font-size: 30px;
+      }
+
+      /* Style the back side */
+      .flip-cardtwo-back {
+        background-color: LavenderBlush;
+        color: Plum;
+        transform: rotateY(180deg);
+      }
+
+
+
+        .flip-cardthree {
+              background-color: transparent;
+              width: 300px;
+              height: 200px;
+              border: 1px solid #f1f1f1;
+              perspective: 1000px; /* Remove this if you don't want the 3D effect */
+            }
+
+            /* This container is needed to position the front and back side */
+            .flip-cardthree-inner {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              transition: transform 0.8s;
+              transform-style: preserve-3d;
+            }
+
+            /* Do an horizontal flip when you move the mouse over the flip box container */
+            .flip-cardthree:hover .flip-cardthree-inner {
+              transform: rotateY(180deg);
+            }
+
+            /* Position the front and back side */
+            .flip-cardthree-front, .flip-cardthree-back {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+            }
+
+            /* Style the front side (fallback if image is missing) */
+            .flip-cardthree-front {
+              background-color: LavenderBlush;
+              color: Plum;
+              font-style: Georgia;
+              font-size: 30px;
+            }
+
+            /* Style the back side */
+            .flip-cardthree-back {
+              background-color: LavenderBlush;
+              color: Plum;
+              transform: rotateY(180deg);
+            }
+
+
+                    .flip-cardfour {
+                          background-color: transparent;
+                          width: 300px;
+                          height: 200px;
+                          border: 1px solid #f1f1f1;
+                          perspective: 1000px; /* Remove this if you don't want the 3D effect */
+                        }
+
+                        /* This container is needed to position the front and back side */
+                        .flip-cardfour-inner {
+                          position: relative;
+                          width: 100%;
+                          height: 100%;
+                          text-align: center;
+                          transition: transform 0.8s;
+                          transform-style: preserve-3d;
+                        }
+
+                        /* Do an horizontal flip when you move the mouse over the flip box container */
+                        .flip-cardfour:hover .flip-cardfour-inner {
+                          transform: rotateY(180deg);
+                        }
+
+                        /* Position the front and back side */
+                        .flip-cardfour-front, .flip-cardfour-back {
+                          position: absolute;
+                          width: 100%;
+                          height: 100%;
+                          backface-visibility: hidden;
+                        }
+
+                        /* Style the front side (fallback if image is missing) */
+                        .flip-cardfour-front {
+                          background-color: LavenderBlush;
+                          color: Plum;
+                          font-style: Georgia;
+                          font-size: 30px;
+                        }
+
+                        /* Style the back side */
+                        .flip-cardfour-back {
+                          background-color: LavenderBlush;
+                          color: Plum;
+                          transform: rotateY(180deg);
+                        }
+
+                        .flip-cardfive {
+                          background-color: transparent;
+                          width: 300px;
+                          height: 200px;
+                          border: 1px solid #f1f1f1;
+                          perspective: 1000px; /* Remove this if you don't want the 3D effect */
+                        }
+
+                        /* This container is needed to position the front and back side */
+                        .flip-cardfive-inner {
+                          position: relative;
+                          width: 100%;
+                          height: 100%;
+                          text-align: center;
+                          transition: transform 0.8s;
+                          transform-style: preserve-3d;
+                        }
+
+                        /* Do an horizontal flip when you move the mouse over the flip box container */
+                        .flip-cardfive:hover .flip-cardfive-inner {
+                          transform: rotateY(180deg);
+                        }
+
+                        /* Position the front and back side */
+                        .flip-cardfive-front, .flip-cardfive-back {
+                          position: absolute;
+                          width: 100%;
+                          height: 100%;
+                          backface-visibility: hidden;
+                        }
+
+                        /* Style the front side (fallback if image is missing) */
+                        .flip-cardfive-front {
+                          background-color: LavenderBlush;
+                          color: Plum;
+                          font-style: Georgia;
+                          font-size: 30px;
+                        }
+
+                        /* Style the back side */
+                        .flip-cardfive-back {
+                          background-color: LavenderBlush;
+                          color: Plum;
+                          transform: rotateY(180deg);
+                        }
+
+                        .flip-cardsix {
+                          background-color: transparent;
+                          width: 300px;
+                          height: 200px;
+                          border: 1px solid #f1f1f1;
+                          perspective: 1000px; /* Remove this if you don't want the 3D effect */
+                        }
+
+                        /* This container is needed to position the front and back side */
+                        .flip-cardsix-inner {
+                          position: relative;
+                          width: 100%;
+                          height: 100%;
+                          text-align: center;
+                          transition: transform 0.8s;
+                          transform-style: preserve-3d;
+                        }
+
+                        /* Do an horizontal flip when you move the mouse over the flip box container */
+                        .flip-cardsix:hover .flip-cardsix-inner {
+                          transform: rotateY(180deg);
+                        }
+
+                        /* Position the front and back side */
+                        .flip-cardsix-front, .flip-cardsix-back {
+                          position: absolute;
+                          width: 100%;
+                          height: 100%;
+                          backface-visibility: hidden;
+                        }
+
+                        /* Style the front side (fallback if image is missing) */
+                        .flip-cardsix-front {
+                          background-color: LavenderBlush;
+                          color: Plum;
+                          font-style: Georgia;
+                          font-size: 30px;
+                        }
+
+                        /* Style the back side */
+                        .flip-cardsix-back {
+                          background-color: LavenderBlush;
+                          color: Plum;
+                          transform: rotateY(180deg);
+                        }
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>table</p>
+        </div>
+        <div class="flip-card-back">
+          <p>a clearing to lay your head.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-cardone">
+      <div class="flip-cardone-inner">
+        <div class="flip-cardone-front">
+          <p>candle</p>
+        </div>
+        <div class="flip-cardone-back">
+          <p>sometimes you have to break a ritual to reimagine the day.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-cardtwo">
+      <div class="flip-cardtwo-inner">
+        <div class="flip-cardtwo-front">
+          <p>bread</p>
+        </div>
+        <div class="flip-cardtwo-back">
+          <p>knead the softness until it makes you full. leave some for the ones you are leaving behind.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-cardthree">
+      <div class="flip-cardthree-inner">
+        <div class="flip-cardthree-front">
+          <p>key</p>
+        </div>
+        <div class="flip-cardthree-back">
+          <p>lock the stories in the river for seven generations or more. bury them on the shore where only your daughter's daughters will know. throw the key over your left shoulder and walk away.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-cardfour">
+      <div class="flip-cardfour-inner">
+        <div class="flip-cardfour-front">
+          <p>butter</p>
+        </div>\
+        <div class="flip-cardfour-back">
+          <p>only melt on tongues that deserve you.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-cardfive">
+      <div class="flip-cardfive-inner">
+        <div class="flip-cardfive-front">
+          <p>list</p>
+        </div>\
+        <div class="flip-cardfive-back">
+          <p>for remembering the ones who tell it to you straight. for going to the store when your mind is still in yesterday. for doodles for prayers for dreaming. for getting right and getting through.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-cardsix">
+      <div class="flip-cardsix-inner">
+        <div class="flip-cardsix-front">
+          <p>seedlings</p>
+        </div>\
+        <div class="flip-cardsix-back">
+          <p>begin again.</p>
+        </div>
+      </div>
+    </div>
+<br>
+<br>
+
+
+  <div class="appendix"
+    <p> <em>Appendix</em><br><br><b>table - </b> "first she would have to trust that a table can be strong enough for a question"
+      <br><br><b>candle - </b> "she lit a candle for Tuesday. she lit a candle for sweat...she lit a candle for maybe and for sometimes and for depends."
+      <br><br><b>bread - </b> "as the bread rose she filled out her
+skin and her body got soft and got full again and her bones said
+this house would not win she was free she was getting out."
+    <br><br><b>key - </b> "because that early morning clarity is what you are afraid to know and somewhere in it was the key (b flat) to why he had to go."
+    <br><br><b>butter - </b> "i be that...wayward woman. she says. i be the butter that makes you love your bread."
+    <br><br><b>list - </b> "they knew her by her lists. more checkable boxes than hearts."
+    <br><br><b>seedlings - </b> "remember everything you learn will soon outgreen you. remember. everything you forget will grow."
+    <br><br>All quotes from Gumbs, Alexis Pauline. <em>Spill: Scenes of Black feminist fugitivity.</em> Duke University Press, 2016.
+
+
+
+
+
+
+    <script type="application/javascript">
+       // starter code below, remove double slashes from the line you want to use
+       // make sure you have html elements with the correct ids. for example if you are using the javascript function document.getElementById("cool-button"), there should be an HTML element inside of the body tags that looks like this: <div id="cool-button">whatever content you want to put inside here</div>
+
+       // const myButton = document.getElementById("cool-button");
+       // const importantText = document.getElementById("important-text");
+
+       // myButton.addEventListener('click', function() {
+       //   importantText.classList.toggle("highlight-text");
+       //   importantText.style.transform = "rotate(-5deg)";
+       // });
+     </script>
+  </body>
+</html>
